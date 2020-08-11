@@ -23,8 +23,8 @@ class RegistrarAPIRequests extends FormRequest
     public function rules()
     {
         return [
-          "data" => "required|is_array",
-          "proyect" => "required|is_array",
+          "data" => "required|array",
+          "proyect" => "required|array",
           "proyect.version" => "required|string",
           "proyect.name" => "required|string",
           "proyect.uuid" => "required|string",
