@@ -1,0 +1,29 @@
+{
+    "name": "codewlt/rastreador-packages",
+    "description": "Rastreador de proyectos",
+    "authors": [
+        {
+            "name": "FuriosoJack",
+            "email": "iam@furiosojack.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "laravel/framework": "~7.0 | ~6.0 |  ~5.0"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codwelt\\RastreadorProyectos\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Codwelt\\RastreadorProyectos\\Tests\\": "tests/"
+        }
+    }
+}
