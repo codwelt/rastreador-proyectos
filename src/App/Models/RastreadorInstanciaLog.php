@@ -15,4 +15,9 @@ class RastreadorInstanciaLog extends Model
     protected $table = "rastreador_instances_logs";
     protected $fillable = ["instance_id","data"];
 
+
+    public function instancia()
+    {
+        return $this->belongsTo(RastreadorInstancia::class,"instance_id","id");
+    }
 }

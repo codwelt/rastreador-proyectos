@@ -21,9 +21,10 @@ class RastreadorInstances extends Migration
     {
         Schema::create('rastreador_instances', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('uuid',36)->unique();
+            $table->string('uuid',36);
             $table->string('proyect_name');
             $table->string('version');
+            $table->integer("id_father")->nullable();
             $table->timestamps();
         });
 

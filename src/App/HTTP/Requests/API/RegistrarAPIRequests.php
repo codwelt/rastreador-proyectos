@@ -13,4 +13,23 @@ use Illuminate\Foundation\Http\FormRequest;
 class RegistrarAPIRequests extends FormRequest
 {
 
+    public function authorize()
+    {
+        return true;
+
+
+    }
+
+    public function rules()
+    {
+        return [
+          "data" => "required|is_array",
+          "proyect" => "required|is_array",
+          "proyect.version" => "required|string",
+          "proyect.name" => "required|string",
+          "proyect.uuid" => "required|string",
+          "proyecto.uuid_father" => "string"
+        ];
+    }
+
 }

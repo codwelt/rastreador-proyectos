@@ -13,6 +13,11 @@ use Illuminate\Database\Eloquent\Model;
 class RastreadorInstancia extends Model
 {
     protected $table = "rastreador_instances";
-    protected $fillable = ["uuid","proyect_name","version"];
+    protected $fillable = ["uuid","proyect_name","version","id_father"];
 
+
+    public function logs()
+    {
+        return $this->hasMany(RastreadorInstanciaLog::class,"instance_id","id");
+    }
 }
