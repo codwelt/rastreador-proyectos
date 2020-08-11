@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Schema;
  * @package CodWelt\Blog\migrations
  * @author FuriosoJack <iam@furiosojack.com>
  */
-class RastreadorInstancesLogs extends Migration
+class TableRastreadorInstancesLogs extends Migration
 {
     /**
      * Run the migrations.
